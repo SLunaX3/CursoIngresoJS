@@ -20,7 +20,7 @@ function mostrarAumento()
 	resultado = parseInt(sueldo) + porcentaje;
 
 
-	document.getElementById('txtIdResultado').value = resultado
+	document.getElementById('txtIdResultado').value = resultado;
 
 
 
