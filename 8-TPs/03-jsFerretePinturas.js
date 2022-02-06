@@ -15,7 +15,7 @@ function FahrenheitCentigrados ()
 	var aCentígrados;
 	var mensaje;
 
-	temperaturaIngresada = parseInt(txtIdTemperatura.value);
+	temperaturaIngresada = parseFloat(txtIdTemperatura.value);
 
 	aCentígrados = (temperaturaIngresada - 32) * 5/9;
 
@@ -31,7 +31,7 @@ function CentigradosFahrenheit ()
 	var aFarenheit;
 	var mensaje;
 
-	temperaturaIngresada = parseInt(txtIdTemperatura.value);
+	temperaturaIngresada = parseFloat(txtIdTemperatura.value);
 
 	aFarenheit = (temperaturaIngresada * 9/5) + 32 ;
 
