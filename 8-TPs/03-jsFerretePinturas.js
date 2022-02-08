@@ -39,4 +39,6 @@ function CentigradosFahrenheit ()
 	mensaje += aFarenheit.toFixed(2) + "° Fahrenheit";
 
 	alert(mensaje);
+
+	
 }
