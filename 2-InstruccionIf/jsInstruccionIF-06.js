@@ -20,14 +20,15 @@ function mostrar()
 	}
 	else
 	{
-		if (edad>12 && edad<18)
+		if (edad<18) 
+//(edad>12 && edad<18) -> es redundante "edad>12" por la condición anterior
 		{
 			alert("Ud es un Adolescente");
 		}
 
 		else 
 		{
-			if(edad>17)
+			//if(edad>17) -> es redundante
 			{
 				alert("Ud es una persona Mayor de Edad");
 			}
