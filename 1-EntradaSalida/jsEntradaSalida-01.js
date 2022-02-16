@@ -4,12 +4,7 @@ E/S 01
 Al presionar el  botón, 
 se debe mostrar un mensaje como el siguiente "Esto funciona de maravilla"
 
-1 Tp Sabados
-Se piden tres nombre de producto, y los precios de cada  producto ingresado,
-sacar el precio bruto (la suma de los tres sin impuestos), el promedio de los
-precios y el precio final total más iva (21%), pedir un porcentaje de descuento 
-y aplicarlo al precio final, mostrar todos 
-los datos calculados e ingresados por alert. (solo un alert en el código)
+
 */
 
 
