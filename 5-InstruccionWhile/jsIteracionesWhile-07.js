@@ -171,6 +171,41 @@ isNaN : is Not a Number } devuelve un dato booleano (true o false)
 	
 	while (isNaN(numero)==true)
 		{aca pediria de nuevo el numero}
+
+
+//txtIdSuma
+//txtIdPromedio
+function mostrar()
+{
+
+	var numeroIngresado;
+	var respuesta;
+	var suma;
+	var promedio;
+	var contador;
+
+	respuesta = "si";//i=0
+	suma = 0;
+	contador = 0;
+	
+	while (respuesta == "si")//i<5
+	{
+        numeroIngresado = prompt("Ingrese un número:");
+        numeroIngresado = parseInt(numeroIngresado);
+
+        suma = suma + numeroIngresado; //suma += numeroIngresado;
+		contador ++;
+
+		respuesta = prompt("Desea ingresar otro número? Ingrese "si" o "no" :");//i++
+				//confirm(en vez de prompt) true en vez de "si"
+	}
+
+	promedio = suma/contador;
+
+	txtIdSuma.value = suma;
+	txtIdPromedio.value = promedio;
+
+}
 		
 
 */
