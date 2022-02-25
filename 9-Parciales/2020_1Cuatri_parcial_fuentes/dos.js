@@ -1,7 +1,7 @@
 /*
 Sonia Luna
 DIV I
-
+Parcial 02
 
 Realizar el algoritmo que permita ingresar los datos de una compra 
 productos de la construccion, hasta que el cliente quiera:
