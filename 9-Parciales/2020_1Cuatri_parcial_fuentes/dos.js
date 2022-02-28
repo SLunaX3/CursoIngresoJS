@@ -1,7 +1,7 @@
 /*
 Sonia Luna
 DIV I
-Parcial 02
+PRACTICA Parcial 02 2020
 
 Realizar el algoritmo que permita ingresar los datos de una compra 
 productos de la construccion, hasta que el cliente quiera:
@@ -47,7 +47,6 @@ function mostrar()
   while(respuesta==true)
   {
   	tipo = prompt("Ingrese el tipo de producto (arena, cal o cemento): ");
-
   	while(tipo!="arena" && tipo!="cal" && tipo!="cemento")
   	{
   		tipo = prompt("Error. Intente nuevamente: arena, cal o cemento ");
@@ -55,7 +54,6 @@ function mostrar()
 
   	cantidadBolsas = prompt("Ingrese la cantidad: ");
   	cantidadBolsas = parseInt(cantidadBolsas);
-
   	while(isNaN(cantidadBolsas)|| cantidadBolsas<1)
   	{
 	  	cantidadBolsas = prompt("Error. Ingrese una cantidad válida: ");
@@ -64,7 +62,6 @@ function mostrar()
 
   	precioUnidad = prompt("Ingrese el precio: ");
   	precioUnidad = parseInt(precioUnidad);
-
   	while(isNaN(precioUnidad)|| precioUnidad<1)
   	{
 	  	precioUnidad = prompt("Error. Ingrese un precio válido: ");

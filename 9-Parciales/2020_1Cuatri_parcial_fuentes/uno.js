@@ -1,7 +1,7 @@
 /*
 Sonia Luna
 DIV I
-Parcial 01
+PRACTICA Parcial 01 2020
 
 Debemos realizar la carga de 5(cinco) productos de prevención de contagio,
 de cada una debo obtener los siguientes datos:
@@ -37,6 +37,8 @@ function mostrar()
 	var promedioCompra;
 	var tipoConMasCantidad;
 
+	marca ="";
+	fabricante = "";
 	control =0;
 	banderaAlcohol = false;
 
@@ -49,35 +51,41 @@ function mostrar()
 
 	while(control<5)
 	{
-		tipo = prompt ("Ingrese el tipo de producto: barbijo, jabón o alcohol");
-	
+		tipo = prompt ("Ingrese el tipo de producto: barbijo, jabón o alcohol: ");
 		while(tipo!="barbijo" && tipo!= "jabón" && tipo!="alcohol")
 		{
-			tipo=prompt("Error. Intente nuevamente.");
+			tipo=prompt("Error. Intente nuevamente:");
 		}
 
-		precio=prompt("Ingrese el precio (entre 100 y 300) ");
+		precio=prompt("Ingrese el precio (entre 100 y 300): ");
 		precio=parseInt(precio);
-
 		while(isNaN(precio)|| precio<100 || precio>300)
 		{
-			precio=prompt("Error. Ingrese el precio (entre 100 y 300).");
+			precio=prompt("Error. Ingrese el precio (entre 100 y 300):");
 			precio=parseInt(precio);
 		}
 
-		cantidad=prompt("Ingrese la cantidad.")
+		cantidad=prompt("Ingrese la cantidad:")
 		cantidad=parseInt(cantidad);
-
 		while(isNaN(cantidad) || cantidad<1 || cantidad>1000)
 		{
-			cantidad=prompt("Error. Ingrese la cantidad.");
+			cantidad=prompt("Error. Ingrese la cantidad:");
 			cantidad=parseInt(cantidad);
 		}
 
-		marca= prompt("Ingrese la marca.");
+		marca= prompt("Ingrese la marca:");
+		while(marca=="")
+		{
+			marca=prompt("Error. Ingrese una marca: ");
+		}
 
-		fabricante=prompt("Ingrese el fabricante.");
+		fabricante=prompt("Ingrese el fabricante:");
+		while(fabricante=="")
+		{
+			fabricante=prompt("Error. Ingrese un fabricante: ");
+		}
 
+		//a) Del más barato de los alcohol, la cantidad de unidades y el fabricante
 		if (tipo=="alcohol") 
 		{
 			acumuladorAlcohol+=cantidad;
@@ -90,15 +98,12 @@ function mostrar()
 				fabricanteAlcoholBarato=fabricante;
 				banderaAlcohol=true;
 			}
-
 		}
-
-		else
-
+		else//b) Del tipo con mas unidades, el promedio por compra
 		{	
 			if (tipo == "jabón") 
 			{
-				acumuladorJabon+=cantidad;
+				acumuladorJabon+=cantidad;//c) Cuántas unidades de jabones hay en total
 				contadorJabon++;
 			}
 
@@ -111,7 +116,7 @@ function mostrar()
 
 		control++;
 	}
-
+//b) Del tipo con mas unidades, el promedio por compra
 	if (acumuladorAlcohol>acumuladorJabon && acumuladorAlcohol>acumuladorBarbijo) 
 	{
 		promedioCompra = acumuladorAlcohol/contadorAlcohol;

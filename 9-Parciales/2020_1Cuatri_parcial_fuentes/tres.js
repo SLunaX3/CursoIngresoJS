@@ -1,7 +1,7 @@
 /*
 Sonia Luna
 DIV I
-Parcial 03
+PRACTICA Parcial 03 2020
 
 En el ingreso a un viaje en avion nos solicitan nombre , edad, sexo("f" o "m") y estado civil("soltero", "casado" o "viudo")y temperatura corporal.
 a) El nombre de la persona con mas temperatura.
