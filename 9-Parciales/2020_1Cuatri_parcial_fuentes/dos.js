@@ -27,6 +27,7 @@ function mostrar()
   var porcentaje;
   var importeBruto;
   var importeTotal;
+  var descuento;
   var acumuladorArena;
   var acumuladorCal;
   var acumuladorCemento;
@@ -128,9 +129,17 @@ function mostrar()
   	{
   		porcentaje = 15;
   	}
+  	else
+  	{
+  		porcentaje = 0;
+  	}
   }
 
 //b) el importe total a pagar con descuento(solo si corresponde)
+if (porcentaje!=0) 
+{
+	descuento=importeTotal* porcentaje/100;
+}
   importeTotal = importeBruto - importeBruto * porcentaje/100;
 
   alert(tipoMasCaro);

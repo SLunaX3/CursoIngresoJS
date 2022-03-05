@@ -201,13 +201,15 @@ function mostrar()
 				primerAlumnoAprobado = alumno;
 				banderaPrimerAlumno = false;
 			}
+			contadorAlumnosAprobados++;
+			
 			//g)el nombre de la mujer más alta de las que aprobó
 			if (sexo=="f"&&(altura>alturaMaxF||banderaAlturaMaxF==false)) 
 			{
 				nombreAlturaMaxF = alumno;
 				banderaAlturaMaxF = true;
 			}
-			contadorAlumnosAprobados++;
+			
 		}
 		//h)el porcentaje de  personas que desaprobaron sobre el total
 		else
@@ -259,9 +261,11 @@ function mostrar()
 	if(contadorMasculino>0)
 	{
 		document.write("Promedio de Edad Hombres : "+promedioEdadM+"<br>");
-		//i)el nombre del primer hombre, que mide menos de 160 cm y  está  desaprobado.
-		if(altura<160 && nota<4)
-		{document.write("Nombre primer hombre que mide menos de 160 cm y Desaprobado: "+nombrePrimerHombreD+"<br>");}
+	}
+	//i)el nombre del primer hombre, que mide menos de 160 cm y  está  desaprobado.
+	if(banderaPrimerHombreD==false)
+	{
+		document.write("Nombre primer hombre que mide menos de 160 cm y Desaprobado: "+nombrePrimerHombreD+"<br>");}
 	}
 	if(contadorNoBinarios>0)
 	{
